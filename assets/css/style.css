@@ -1448,22 +1448,13 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   .knowledge-cards-layout {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    justify-items: stretch;
   }
-
-  .knowledge-cards-layout {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 1.5rem !important;
-  }
-  .knowledge-cards-layout > .knowledge-card,
-  .knowledge-cards-layout > .knowledge-card.tools-card {
-    width: 100% !important;
-    min-width: 0 !important;
+  .custom-card {
     max-width: 100% !important;
-    margin: 0 !important;
-    grid-column: auto !important;
-    grid-row: auto !important;
+    min-width: 0 !important;
+    width: 100% !important;
   }
 }
 
@@ -1481,6 +1472,16 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     margin: 0 !important;
     grid-column: auto !important;
     grid-row: auto !important;
+  }
+
+  .custom-cards-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .custom-card {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    width: 100% !important;
   }
 }
 
@@ -2170,7 +2171,8 @@ body.light-mode .custom-card .card-icon-btn {
 
 body.light-mode .custom-card .card-icon-btn:hover {
   background: #185adb;
-}    min-width: 0;
+    min-width: 0;
+}
 
 body.light-mode .custom-card .card-icon-btn svg {
   fill: #185adb;}body.light-mode .custom-card .card-icon-btn:hover svg {
