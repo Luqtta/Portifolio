@@ -1445,7 +1445,46 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   .tools-card {
     max-width: 100%;
   }
+
+  .knowledge-cards-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .knowledge-cards-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  .knowledge-cards-layout > .knowledge-card,
+  .knowledge-cards-layout > .knowledge-card.tools-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
 }
+
+@media (max-width: 768px) {
+  .knowledge-cards-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  .knowledge-cards-layout > .knowledge-card,
+  .knowledge-cards-layout > .knowledge-card.tools-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+
+
 
 @media (max-width: 700px) {
   .knowledge-cards-layout {
@@ -1945,20 +1984,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 }
 
 
-@media (max-width: 900px) {
-  .knowledge-cards-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-  }
-  .knowledge-cards-layout > .knowledge-card:nth-child(1),
-  .knowledge-cards-layout > .knowledge-card:nth-child(2),
-  .knowledge-cards-layout > .knowledge-card.tools-card {
-    grid-column: 1 / 2;
-  }
-  .knowledge-cards-layout > .knowledge-card.tools-card {
-    grid-row: 3 / 4;
-  }
-}
+
 
 .knowledge-card {
   padding: 4rem 4.5rem;
@@ -2042,11 +2068,7 @@ body.light-mode #knowledge {
 }
 
 
-@media (max-width: 900px) {
-  #projects .cards {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .custom-cards-layout {
   display: grid;
@@ -2148,12 +2170,16 @@ body.light-mode .custom-card .card-icon-btn {
 
 body.light-mode .custom-card .card-icon-btn:hover {
   background: #185adb;
-}
+}    min-width: 0;
 
 body.light-mode .custom-card .card-icon-btn svg {
-  fill: #185adb;
+  fill: #185adb;}body.light-mode .custom-card .card-icon-btn:hover svg {
+  fill: #fff;
 }
 
-body.light-mode .custom-card .card-icon-btn:hover svg {
-  fill: #fff;
+@media (max-width: 500px) {
+  .knowledge-card {
+    min-width: 0;
+    padding: 1.5rem 1rem;
+  }
 }
