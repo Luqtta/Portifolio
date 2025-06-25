@@ -150,20 +150,82 @@ function showToast(message) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+<<<<<<< HEAD
+=======
+  // Tradução dos textos principais
+  if (window.t) {
+    // Menu
+    const aboutNav = document.getElementById('aboutNav');
+    const projectsNav = document.getElementById('projectsNav');
+    const knowledgeNav = document.getElementById('knowledgeNav');
+    const contactNav = document.getElementById('contactNav');
+    if (aboutNav) aboutNav.textContent = t('about');
+    if (projectsNav) projectsNav.textContent = t('projects');
+    if (knowledgeNav) knowledgeNav.textContent = t('knowledge');
+    if (contactNav) contactNav.textContent = t('contact');
+
+    // Home
+    const welcome = document.getElementById('welcome-text');
+    const iam = document.getElementById('iam-text');
+    const dev = document.getElementById('dev-text');
+    const contactBtn = document.getElementById('contact-btn');
+    if (welcome) welcome.textContent = t('welcome');
+    if (iam) iam.textContent = t('iAm');
+    if (dev) dev.textContent = t('dev');
+    if (contactBtn) contactBtn.textContent = t('contact');
+
+    // Sobre mim
+    const aboutTitle = document.getElementById('about-title');
+    const aboutDesc = document.getElementById('about-desc');
+    const downloadCVBtn = document.getElementById('download-cv-btn');
+    if (aboutTitle) aboutTitle.textContent = t('about');
+    if (aboutDesc) aboutDesc.textContent = t('aboutDesc');
+    if (downloadCVBtn) downloadCVBtn.textContent = t('downloadCV');
+
+    // Conhecimentos
+    const knowledgeTitle = document.getElementById('knowledge-title');
+    const softSkillsTitle = document.getElementById('softskills-title');
+    const toolsTitle = document.getElementById('tools-title');
+    if (knowledgeTitle) knowledgeTitle.textContent = t('knowledge');
+    if (softSkillsTitle) softSkillsTitle.textContent = t('softSkills');
+    if (toolsTitle) toolsTitle.textContent = t('tools');
+
+    // Contato
+    const contactTitle = document.getElementById('contact-title');
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    if (contactTitle) contactTitle.textContent = t('contactTitle');
+    if (whatsappBtn) whatsappBtn.childNodes[whatsappBtn.childNodes.length-1].nodeValue = " " + t('whatsapp');
+  }
+
+  // Tradução dos toasts de copiar
+>>>>>>> 7de83d2 (Sistema de tradução automatica)
   document.querySelectorAll('.copy-link').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       const value = this.getAttribute('data-copy');
       navigator.clipboard.writeText(value);
+<<<<<<< HEAD
       if (value.includes('@')) {
         showToast('Email copiado!');
       } else {
         showToast('Número copiado!');
+=======
+      if (window.t) {
+        if (value.includes('@')) {
+          showToast(t('emailCopied'));
+        } else {
+          showToast(t('numberCopied'));
+        }
+>>>>>>> 7de83d2 (Sistema de tradução automatica)
       }
     });
   });
 
+<<<<<<< HEAD
 const typingLine = document.querySelector('.line.typing');
+=======
+  const typingLine = document.querySelector('.line.typing');
+>>>>>>> 7de83d2 (Sistema de tradução automatica)
   if (typingLine) {
     setTimeout(() => {
       typingLine.classList.add('no-cursor');
@@ -196,3 +258,76 @@ themeCheckbox.addEventListener('change', () => {
     localStorage.setItem('theme', 'dark');
   }
 });
+<<<<<<< HEAD
+=======
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Tradução dos textos principais
+  if (window.t) {
+    // Menu
+    const aboutNav = document.getElementById('aboutNav');
+    const projectsNav = document.getElementById('projectsNav');
+    const knowledgeNav = document.getElementById('knowledgeNav');
+    const contactNav = document.getElementById('contactNav');
+    if (aboutNav) aboutNav.textContent = t('about');
+    if (projectsNav) projectsNav.textContent = t('projects');
+    if (knowledgeNav) knowledgeNav.textContent = t('knowledge');
+    if (contactNav) contactNav.textContent = t('contact');
+
+    // Home
+    const welcome = document.getElementById('welcome-text');
+    const iam = document.getElementById('iam-text');
+    const dev = document.getElementById('dev-text');
+    const contactBtn = document.getElementById('contact-btn');
+    if (welcome) welcome.textContent = t('welcome');
+    if (iam) iam.textContent = t('iAm');
+    if (dev) dev.textContent = t('dev');
+    if (contactBtn) contactBtn.textContent = t('contact');
+
+    // Sobre mim
+    const aboutTitle = document.getElementById('about-title');
+    const aboutDesc = document.getElementById('about-desc');
+    const downloadCVBtn = document.getElementById('download-cv-btn');
+    if (aboutTitle) aboutTitle.textContent = t('about');
+    if (aboutDesc) aboutDesc.textContent = t('aboutDesc');
+    if (downloadCVBtn) downloadCVBtn.textContent = t('downloadCV');
+
+    // Conhecimentos
+    const knowledgeTitle = document.getElementById('knowledge-title');
+    const softSkillsTitle = document.getElementById('softskills-title');
+    const toolsTitle = document.getElementById('tools-title');
+    if (knowledgeTitle) knowledgeTitle.textContent = t('knowledge');
+    if (softSkillsTitle) softSkillsTitle.textContent = t('softSkills');
+    if (toolsTitle) toolsTitle.textContent = t('tools');
+
+    // Contato
+    const contactTitle = document.getElementById('contact-title');
+    const whatsappBtn = document.getElementById('whatsapp-btn');
+    if (contactTitle) contactTitle.textContent = t('contactTitle');
+    if (whatsappBtn) whatsappBtn.childNodes[whatsappBtn.childNodes.length-1].nodeValue = " " + t('whatsapp');
+  }
+
+  // Tradução dos toasts de copiar
+  document.querySelectorAll('.copy-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const value = this.getAttribute('data-copy');
+      navigator.clipboard.writeText(value);
+      if (window.t) {
+        if (value.includes('@')) {
+          showToast(t('emailCopied'));
+        } else {
+          showToast(t('numberCopied'));
+        }
+      }
+    });
+  });
+
+  const typingLine = document.querySelector('.line.typing');
+  if (typingLine) {
+    setTimeout(() => {
+      typingLine.classList.add('no-cursor');
+    }, 3400);
+  }
+});
+>>>>>>> 7de83d2 (Sistema de tradução automatica)
