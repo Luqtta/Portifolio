@@ -150,8 +150,6 @@ function showToast(message) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-<<<<<<< HEAD
-=======
   // Tradução dos textos principais
   if (window.t) {
     // Menu
@@ -198,34 +196,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Tradução dos toasts de copiar
->>>>>>> 7de83d2 (Sistema de tradução automatica)
   document.querySelectorAll('.copy-link').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       const value = this.getAttribute('data-copy');
       navigator.clipboard.writeText(value);
-<<<<<<< HEAD
-      if (value.includes('@')) {
-        showToast('Email copiado!');
-      } else {
-        showToast('Número copiado!');
-=======
       if (window.t) {
         if (value.includes('@')) {
           showToast(t('emailCopied'));
         } else {
           showToast(t('numberCopied'));
         }
->>>>>>> 7de83d2 (Sistema de tradução automatica)
       }
     });
   });
 
-<<<<<<< HEAD
-const typingLine = document.querySelector('.line.typing');
-=======
   const typingLine = document.querySelector('.line.typing');
->>>>>>> 7de83d2 (Sistema de tradução automatica)
   if (typingLine) {
     setTimeout(() => {
       typingLine.classList.add('no-cursor');
@@ -258,8 +244,6 @@ themeCheckbox.addEventListener('change', () => {
     localStorage.setItem('theme', 'dark');
   }
 });
-<<<<<<< HEAD
-=======
 
 document.addEventListener('DOMContentLoaded', () => {
   // Tradução dos textos principais
@@ -330,4 +314,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3400);
   }
 });
->>>>>>> 7de83d2 (Sistema de tradução automatica)
