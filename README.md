@@ -29,7 +29,7 @@ MIT
 
 ---
 
-## 🚀 Como Rodar Localmente
+## Como Rodar Localmente
 
 1. **Clone o repositório**
 ```bash
