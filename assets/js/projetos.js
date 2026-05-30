@@ -1,20 +1,21 @@
 const projetosData = {
   pt: [
     {
-      title: "Helpdesk API",
-      subtitle: "Spring Boot · PostgreSQL · Docker",
-      desc: "API REST para gerenciamento de tickets de suporte. Simula um sistema de helpdesk onde usuários criam tickets, acompanham status e atualizam solicitações.",
+      title: "NossaGrana",
+      subtitle: "Java 21 · Spring Boot · React · PostgreSQL",
+      desc: "Aplicação web de gestão financeira compartilhada para casais. Controle de despesas, orçamento por categoria, relatórios mensais e acerto automático entre parceiros.",
       color: "#0d6e3a",
-      tags: ["Java 21", "Spring Boot", "PostgreSQL", "Docker", "Maven"],
+      tags: ["Java 21", "Spring Boot", "React", "TypeScript", "PostgreSQL", "JWT"],
       features: [
-        "Criação e gerenciamento de tickets",
-        "Acompanhamento de status",
-        "Arquitetura em camadas (Controller → Service → Repository)",
-        "Containerização com Docker",
-        "Spring Data JPA"
+        "Gestão financeira compartilhada entre parceiros",
+        "Controle de despesas e receitas",
+        "Orçamento por categoria",
+        "Relatórios mensais",
+        "Acerto automático entre parceiros"
       ],
-      github: "https://github.com/Luqtta/helpdesk-api",
-      live: ""
+      badge: "Em produção",
+      github: "https://github.com/Luqtta/NossaGrana",
+      live: "https://nossa-grana-theta.vercel.app"
     },
     {
       title: "DayFlow",
@@ -30,23 +31,24 @@ const projetosData = {
         "Histórico com gráficos animados",
         "Upload de avatar via Cloudinary"
       ],
+      badge: "Em produção",
       github: "https://github.com/Luqtta/DayFlow",
       live: "https://day-flow-eta.vercel.app"
     },
     {
-      title: "Medical Remember",
-      subtitle: "Node.js · TypeScript · MongoDB · Twilio",
-      desc: "App de lembretes de medicamentos criado enquanto o dev estava internado com pneumonia. Agenda automática e notificações via WhatsApp.",
+      title: "Mc-Vip-SaaS",
+      subtitle: "Next.js · TypeScript · Prisma · Mercado Pago",
+      desc: "SaaS para venda de VIP em servidores Minecraft com entrega automática via plugin Bukkit. Integração com Mercado Pago, webhook validado e retry automático.",
       color: "#185adb",
-      tags: ["Node.js", "TypeScript", "Express", "MongoDB", "Twilio API"],
+      tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Mercado Pago", "Java"],
       features: [
-        "Cadastro de medicamentos com dosagem e horários",
-        "Geração automática de agenda de doses",
-        "Notificações WhatsApp via Twilio API",
-        "Confirmação de dose tomada",
-        "Interface responsiva"
+        "Venda automatizada de VIP em servidores Minecraft",
+        "Integração com Mercado Pago",
+        "Webhook validado com retry automático",
+        "Entrega automática via plugin Bukkit",
+        "Persistência com Prisma + PostgreSQL"
       ],
-      github: "https://github.com/Luqtta/Medical-Remember",
+      github: "https://github.com/Luqtta/Mc-Vip-SaaS",
       live: ""
     },
     {
@@ -64,9 +66,108 @@ const projetosData = {
       ],
       github: "https://github.com/Luqtta/Ls-Optimizer-1.0",
       live: ""
+    },
+    {
+      title: "Helpdesk API",
+      subtitle: "Spring Boot · PostgreSQL · Docker",
+      desc: "API REST para gerenciamento de tickets de suporte. Simula um sistema de helpdesk onde usuários criam tickets, acompanham status e atualizam solicitações.",
+      color: "#0d6e3a",
+      tags: ["Java 21", "Spring Boot", "PostgreSQL", "Docker", "Maven"],
+      features: [
+        "Criação e gerenciamento de tickets",
+        "Acompanhamento de status",
+        "Arquitetura em camadas (Controller → Service → Repository)",
+        "Containerização com Docker",
+        "Spring Data JPA"
+      ],
+      github: "https://github.com/Luqtta/helpdesk-api",
+      live: ""
+    },
+    {
+      title: "Medical Remember",
+      subtitle: "Node.js · TypeScript · MongoDB · Twilio",
+      desc: "App de lembretes de medicamentos criado enquanto o dev estava internado com pneumonia. Agenda automática e notificações via WhatsApp.",
+      color: "#185adb",
+      tags: ["Node.js", "TypeScript", "Express", "MongoDB", "Twilio API"],
+      features: [
+        "Cadastro de medicamentos com dosagem e horários",
+        "Geração automática de agenda de doses",
+        "Notificações WhatsApp via Twilio API",
+        "Confirmação de dose tomada",
+        "Interface responsiva"
+      ],
+      github: "https://github.com/Luqtta/Medical-Remember",
+      live: ""
     }
   ],
   en: [
+    {
+      title: "NossaGrana",
+      subtitle: "Java 21 · Spring Boot · React · PostgreSQL",
+      desc: "Shared financial management web app for couples. Expense tracking, budgeting by category, monthly reports and automatic settlement between partners.",
+      color: "#0d6e3a",
+      tags: ["Java 21", "Spring Boot", "React", "TypeScript", "PostgreSQL", "JWT"],
+      features: [
+        "Shared financial management between partners",
+        "Expense and income tracking",
+        "Budget by category",
+        "Monthly reports",
+        "Automatic settlement between partners"
+      ],
+      badge: "In production",
+      github: "https://github.com/Luqtta/NossaGrana",
+      live: "https://nossa-grana-theta.vercel.app"
+    },
+    {
+      title: "DayFlow",
+      subtitle: "Spring Boot · React · PostgreSQL · JWT",
+      desc: "Full-stack routine management app with gamification. Organize daily tasks, track your progress and compete on the global leaderboard.",
+      color: "#6b2fa0",
+      tags: ["Java 21", "Spring Boot", "React", "TypeScript", "PostgreSQL", "JWT"],
+      features: [
+        "JWT authentication with Spring Security",
+        "Custom routines with categories",
+        "Daily checklist with real-time progress",
+        "D–S score system and global leaderboard",
+        "History with animated charts",
+        "Avatar upload via Cloudinary"
+      ],
+      badge: "In production",
+      github: "https://github.com/Luqtta/DayFlow",
+      live: "https://day-flow-eta.vercel.app"
+    },
+    {
+      title: "Mc-Vip-SaaS",
+      subtitle: "Next.js · TypeScript · Prisma · Mercado Pago",
+      desc: "SaaS for selling VIP on Minecraft servers with automatic delivery via Bukkit plugin. Mercado Pago integration, validated webhook and automatic retry.",
+      color: "#185adb",
+      tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Mercado Pago", "Java"],
+      features: [
+        "Automated VIP sales for Minecraft servers",
+        "Mercado Pago integration",
+        "Validated webhook with automatic retry",
+        "Automatic delivery via Bukkit plugin",
+        "Persistence with Prisma + PostgreSQL"
+      ],
+      github: "https://github.com/Luqtta/Mc-Vip-SaaS",
+      live: ""
+    },
+    {
+      title: "LS Optimizer",
+      subtitle: "C# · WPF · .NET · Windows API",
+      desc: "Desktop app for Windows performance optimization. Detects running games, applies performance presets and manages system memory.",
+      color: "#512bd4",
+      tags: ["C#", "WPF", ".NET", "Windows API", "XAML"],
+      features: [
+        "Game Mode with automatic game detection",
+        "Process and priority optimization",
+        "Standby memory and cache cleanup",
+        "Dark-themed UI with WPF/XAML",
+        "Timer resolution and performance tweaks"
+      ],
+      github: "https://github.com/Luqtta/Ls-Optimizer-1.0",
+      live: ""
+    },
     {
       title: "Helpdesk API",
       subtitle: "Spring Boot · PostgreSQL · Docker",
@@ -84,23 +185,6 @@ const projetosData = {
       live: ""
     },
     {
-      title: "DayFlow",
-      subtitle: "Spring Boot · React · PostgreSQL · JWT",
-      desc: "Full-stack routine management app with gamification. Organize daily tasks, track your progress and compete on the global leaderboard.",
-      color: "#6b2fa0",
-      tags: ["Java 21", "Spring Boot", "React", "TypeScript", "PostgreSQL", "JWT"],
-      features: [
-        "JWT authentication with Spring Security",
-        "Custom routines with categories",
-        "Daily checklist with real-time progress",
-        "D–S score system and global leaderboard",
-        "History with animated charts",
-        "Avatar upload via Cloudinary"
-      ],
-      github: "https://github.com/Luqtta/DayFlow",
-      live: "https://day-flow-eta.vercel.app"
-    },
-    {
       title: "Medical Remember",
       subtitle: "Node.js · TypeScript · MongoDB · Twilio",
       desc: "Medication reminder app built while the dev was hospitalized with pneumonia. Automatic schedule and WhatsApp notifications.",
@@ -114,22 +198,6 @@ const projetosData = {
         "Responsive interface"
       ],
       github: "https://github.com/Luqtta/Medical-Remember",
-      live: ""
-    },
-    {
-      title: "LS Optimizer",
-      subtitle: "C# · WPF · .NET · Windows API",
-      desc: "Desktop app for Windows performance optimization. Detects running games, applies performance presets and manages system memory.",
-      color: "#512bd4",
-      tags: ["C#", "WPF", ".NET", "Windows API", "XAML"],
-      features: [
-        "Game Mode with automatic game detection",
-        "Process and priority optimization",
-        "Standby memory and cache cleanup",
-        "Dark-themed UI with WPF/XAML",
-        "Timer resolution and performance tweaks"
-      ],
-      github: "https://github.com/Luqtta/Ls-Optimizer-1.0",
       live: ""
     }
   ]
@@ -148,7 +216,7 @@ function projetos(section) {
           <div class="backend-card">
             <div class="backend-card-header" style="background:${projeto.color}18;border-bottom:2px solid ${projeto.color}55;">
               <div class="backend-card-title-row">
-                <h3 class="backend-card-title">${projeto.title}</h3>
+                <h3 class="backend-card-title">${projeto.title}${projeto.badge ? ` <span class="backend-card-badge">${projeto.badge}</span>` : ''}</h3>
                 <span class="backend-card-subtitle">${projeto.subtitle}</span>
               </div>
               <div class="backend-card-tags">

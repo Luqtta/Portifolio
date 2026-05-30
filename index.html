@@ -9,13 +9,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Lucas Morais Souza — Backend Java Developer especializado em Spring Boot, PostgreSQL e Docker" />
     <meta name="author" content="Lucas Morais Souza" />
+    <meta name="keywords" content="lucas, backend, java, spring boot, postgresql, docker, api rest, jwt, hibernate, jpa, desenvolvedor backend, backend developer, java developer" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#00856F" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lucas Morais // Backend Java Developer" />
     <meta property="og:description" content="Lucas Morais Souza — Backend Java Developer especializado em Spring Boot, PostgreSQL e Docker" />
     <meta property="og:image" content="./assets/images/imagem-lucas.png" />
-    <meta name="keywords" content="lucas, backend, java, spring boot, postgresql, docker, api rest, jwt, hibernate, jpa, desenvolvedor backend, backend developer, java developer" />
-    <meta name="robots" content="index" />
+    <meta property="og:url" content="https://lucasmorais.dev/" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lucas Morais // Backend Java Developer" />
+    <meta name="twitter:description" content="Lucas Morais Souza — Backend Java Developer especializado em Spring Boot, PostgreSQL e Docker" />
+    <meta name="twitter:image" content="./assets/images/imagem-lucas.png" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Gemunu+Libre:wght@200&display=swap"
       rel="stylesheet"
     />
 
@@ -25,8 +36,10 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./assets/js/traducao.js"></script>
+    <script src="./assets/js/traducao.js" defer></script>
     <script type="module" src="./assets/js/main.js" defer></script>
 
     <title>Lucas Morais // Backend Java Developer</title>
@@ -58,12 +71,16 @@
               <a
                 href="https://www.instagram.com/luqtta_/"
                 title="Instagram"
+                aria-label="Instagram (abre em nova aba)"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
+                  aria-hidden="true"
+                  focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -94,12 +111,16 @@
               <a
                 href="https://github.com/Luqtta"
                 title="Github"
+                aria-label="GitHub (abre em nova aba)"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
@@ -113,12 +134,16 @@
               <a
                 href="https://www.linkedin.com/in/lucas-morais-souza-a5b599317/"
                 title="LinkedIn"
+                aria-label="LinkedIn (abre em nova aba)"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
@@ -209,8 +234,12 @@
         <div class="col-b">
           <img
             src="assets/images/header.png"
-            alt="Backend Java Developer"
+            alt="Ilustração de um desenvolvedor backend trabalhando"
             id="header-img"
+            width="900"
+            height="600"
+            fetchpriority="high"
+            decoding="async"
           />
         </div>
       </div>
@@ -225,10 +254,10 @@
           </header>
           <div class="content">
             <p id="about-desc">
-              Meu nome é Lucas Morais Souza, tenho 16 anos e sou especializado em desenvolvimento backend com Java. Comecei desenvolvendo plugins complexos para Minecraft com Bukkit/Spigot — sistemas de clãs, warps, NPCs e economia — o que me deu uma base sólida em POO, eventos e persistência de dados. Hoje foco em APIs REST com Spring Boot, PostgreSQL e Docker, construindo sistemas escaláveis e seguros. Se preferir, podemos conversar por e-mail ou WhatsApp.
+              Meu nome é Lucas Morais Souza, tenho 17 anos e sou especializado em desenvolvimento backend com Java. Comecei desenvolvendo plugins complexos para Minecraft com Bukkit/Spigot — sistemas de clãs, warps, NPCs e economia — o que me deu uma base sólida em POO, eventos e persistência de dados. Hoje foco em APIs REST com Spring Boot, PostgreSQL e Docker, construindo sistemas escaláveis e seguros. Se preferir, podemos conversar por e-mail ou WhatsApp.
             </p>
             <div style="margin-top:2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-              <a class="button" id="download-cv-btn" href="assets/docs/curriculo_lucas.pdf" download target="_blank">DOWNLOAD CV</a>
+              <a class="button" id="download-cv-btn" href="assets/docs/curriculo_lucas.pdf" download target="_blank" rel="noopener noreferrer">DOWNLOAD CV</a>
             </div>
           </div>
         </div>
@@ -236,21 +265,94 @@
         <div class="col-b">
           <img
             src="./assets/images/imagem-lucas.png"
-            alt="Imagem de Lucas"
+            alt="Foto de Lucas Morais Souza"
+            width="1440"
+            height="1440"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
     </section>
 
     <section id="projects">
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <header>
+          <h2>Projetos</h2>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Card 1: NossaGrana -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3>NossaGrana</h3>
+              <span class="badge badge-production">Em produção</span>
+            </div>
+            <p class="project-description">
+              Aplicação web de gestão financeira compartilhada para casais. Controle de despesas, orçamento por categoria, relatórios mensais e acerto automático entre parceiros.
+            </p>
+            <div class="project-stack">
+              <span class="tag">Java 21</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">JWT</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://nossa-grana-theta.vercel.app" target="_blank" rel="noopener noreferrer" class="project-btn btn-primary">Ver projeto</a>
+              <a href="https://github.com/Luqtta/NossaGrana" target="_blank" rel="noopener noreferrer" class="project-btn btn-secondary">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Card 2: DayFlow -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3>DayFlow</h3>
+              <span class="badge badge-production">Em produção</span>
+            </div>
+            <p class="project-description">
+              Aplicação full-stack de gerenciamento de rotinas com gamificação. Sistema de pontuação, ranking global e histórico com gráficos.
+            </p>
+            <div class="project-stack">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Cloudinary</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://day-flow-eta.vercel.app" target="_blank" rel="noopener noreferrer" class="project-btn btn-primary">Ver projeto</a>
+              <a href="https://github.com/Luqtta/dayflow" target="_blank" rel="noopener noreferrer" class="project-btn btn-secondary">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Mc-Vip-SaaS -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Mc-Vip-SaaS</h3>
+            </div>
+            <p class="project-description">
+              SaaS para venda de VIP em servidores Minecraft com entrega automática via plugin Bukkit. Integração com Mercado Pago, webhook validado e retry automático.
+            </p>
+            <div class="project-stack">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Mercado Pago</span>
+              <span class="tag">Java</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Luqtta/Mc-Vip-SaaS" target="_blank" rel="noopener noreferrer" class="project-btn btn-secondary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Stack Técnica -->
     <section id="knowledge" class="py-16 px-4" style="background:#181920;">
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
       <header class="knowledge-title">
         <h2 id="knowledge-title">Stack Técnica</h2>
       </header>
@@ -269,7 +371,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Java 17+</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">POO, Collections, Streams, Concorrência</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">POO, Collections, Streams, Concorrência</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -278,7 +380,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Spring Boot 3</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">REST APIs, Spring Security, Spring Data</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">REST APIs, Spring Security, Spring Data</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -287,7 +389,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Hibernate / JPA</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">ORM, mapeamentos, relacionamentos</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">ORM, mapeamentos, relacionamentos</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -296,7 +398,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">REST APIs</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Endpoints, DTOs, validações, JWT</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Endpoints, DTOs, validações, JWT</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -305,7 +407,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Maven</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Gerenciamento de dependências</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Gerenciamento de dependências</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -314,7 +416,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">JUnit 5 &amp; Mockito</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Testes unitários e de integração</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Testes unitários e de integração</p>
               </div>
             </div>
           </div>
@@ -333,7 +435,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">PostgreSQL</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Modelagem, queries, migrations</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Modelagem, queries, migrations</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -342,7 +444,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">MySQL</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">CRUD, joins, stored procedures</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">CRUD, joins, stored procedures</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -351,7 +453,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Redis</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Cache, sessões, filas</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Cache, sessões, filas</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -360,7 +462,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Docker</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Containers, Docker Compose</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Containers, Docker Compose</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -369,7 +471,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Git &amp; GitHub</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Controle de versão, branches, PRs</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Controle de versão, branches, PRs</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;transition:.2s;">
@@ -378,7 +480,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Linux / CLI</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Terminal, scripts, servidor</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Terminal, scripts, servidor</p>
               </div>
             </div>
           </div>
@@ -397,7 +499,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Postman</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Testes de APIs REST</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Testes de APIs REST</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;">
@@ -406,7 +508,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">IntelliJ IDEA</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">IDE principal para Java</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">IDE principal para Java</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;">
@@ -415,7 +517,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Clean Code &amp; SOLID</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Princípios de design e arquitetura</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Princípios de design e arquitetura</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;">
@@ -424,7 +526,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">Design Patterns</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">GoF, Repository, Service Layer</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">GoF, Repository, Service Layer</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;">
@@ -433,7 +535,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">TypeScript &amp; Node.js</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Full stack secundário</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Full stack secundário</p>
               </div>
             </div>
             <div style="display:flex;gap:1rem;align-items:flex-start;background:#23242a;border:1px solid #44454f;border-radius:.75rem;padding:1rem;">
@@ -442,7 +544,7 @@
               </div>
               <div>
                 <h4 style="color:#fff;font-weight:600;">React</h4>
-                <p style="color:#b0b3c6;font-size:.95rem;">Frontend básico</p>
+                <p style="color:#c8cbdc;font-size:.95rem;">Frontend básico</p>
               </div>
             </div>
           </div>
@@ -489,7 +591,7 @@
               </li>
               <li>
                 <a href="#" class="copy-link" data-copy="+55 62 995189743" title="Copiar número">
-                  <img src="./assets/icons/celular.svg" alt="Ícone de celular." id="cel" />
+                  <img src="./assets/icons/celular.svg" alt="" aria-hidden="true" width="24" height="24" id="cel" />
                   +55 62 995189743
                 </a>
               </li>
@@ -499,14 +601,18 @@
               class="button"
               id="whatsapp-btn"
               title="Me chama no zap!"
+              aria-label="Abrir conversa no WhatsApp (abre em nova aba)"
               href="https://api.whatsapp.com/send?phone=5562995189743&text=Fala,%20Lucas!%20Vim%20do%20teu%20portifólio,%20quero%20trabalhar%20contigo!"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -520,12 +626,20 @@
         </div>
 
         <div class="col-b">
-          <img src="./assets/images/celular-2.png" alt="Ícone de celular." />
+          <img
+            src="./assets/images/celular-2.png"
+            alt=""
+            width="395"
+            height="1035"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+          />
         </div>
       </div>
     </section>
 
-    <a id="backToTopButton" title="Voltar ao topo" href="#home">
+    <a id="backToTopButton" title="Voltar ao topo" aria-label="Voltar ao topo da página" href="#home">
       <svg
         width="40"
         height="40"
@@ -568,12 +682,16 @@
               <a
                 href="https://www.instagram.com/luqtta_/"
                 title="Instagram"
+                aria-label="Instagram (abre em nova aba)"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
+                  aria-hidden="true"
+                  focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -604,12 +722,16 @@
               <a
                 href="https://github.com/Luqtta"
                 title="Github"
+                aria-label="GitHub (abre em nova aba)"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
@@ -623,12 +745,16 @@
               <a
                 href="https://www.linkedin.com/in/lucas-morais-souza-a5b599317/"
                 title="LinkedIn"
+                aria-label="LinkedIn (abre em nova aba)"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
@@ -672,8 +798,6 @@
       </label>
     </div>
 
-    <div id="toast"></div></div>
-  </body>  </body>
-
-
-</html></html>
+    <div id="toast"></div>
+  </body>
+</html>
