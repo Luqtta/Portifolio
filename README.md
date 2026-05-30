@@ -51,18 +51,18 @@ http://localhost:5500
 
 ---
 
-## 📫 Contato
+## Contato
 
 Quer conversar sobre tecnologia, projetos ou oportunidades?
 
-- 💼 **LinkedIn:** [Lucas Morais Souza](https://www.linkedin.com/in/lucas-morais-souza-a5b599317/)
-- 🌐 **Portfólio:** [lucasportifolioweb.netlify.app](https://lucasportifolioweb.netlify.app)
-- 📧 **Email:** lucas.moraisoffice@gmail.com
-- 💬 **WhatsApp:** [+55 62 99518-9743](https://wa.me/5562995189743)
+- **LinkedIn:** [Lucas Morais Souza](https://www.linkedin.com/in/lucas-morais-souza-a5b599317/)
+- **Portfólio:** [lucasportifolioweb.netlify.app](https://lucasportifolioweb.netlify.app)
+- **Email:** lucas.moraisoffice@gmail.com
+- **WhatsApp:** [+55 62 99518-9743](https://wa.me/5562995189743)
 
 ---
 
-## 🏆 Licença
+## Licença
 
 Distribuído sob a [Licença MIT](./LICENSE). Veja `LICENSE` para mais informações.
 
