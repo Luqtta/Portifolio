@@ -1,4 +1,4 @@
-# Lucas Morais Souza — Backend Java Developer
+# Lucas — Backend Java Developer
 
 Portfólio pessoal desenvolvido em HTML, CSS e JavaScript puro.
 
